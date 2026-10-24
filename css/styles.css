@@ -67,3 +67,15 @@ form {
 h1, h2 {
     color: #172554;
 }
+
+img {
+    max-width: 70%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #f4f4f4;
+}
