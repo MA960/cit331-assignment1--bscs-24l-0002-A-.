@@ -22,17 +22,66 @@
     </nav>
   </header>
 
+    <figure class="logo-figure">
+      <img src="startup_home.jpg" alt="People Around a table discussing" width="400" height="200">
+      <figcaption>Meet like minded people and persue goals otherwise considered ambitious.</figcaption>
+    </figure>
+
   <main>
     <form>
-        <label for="first Name">First Name: </label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="last name">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
+        <label for="name">Full name *</label>
+          <input type="text" id="name" name="name" required minlength="3"
+                 maxlength="50" placeholder="e.g. Mubeen Amir" autocomplete="name">
+        
+        <label for="phone">Mobile number *</label>
+          <input type="tel" id="phone" name="phone" required pattern="03[0-9]{9}"
+                 title="11 digits starting with 03, for example 03001234567"
+                 placeholder="0321000000" autocomplete="tel">
+                 <br>
+
+
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" placeholder="24l-0002@qu.edu.pk">
+
+
+        
+        <br>
+         <label for="item">Events *</label>
+          <select id="item" name="item" required>
+            <option value="">Choose an Event</option>
+            <option>Idea generation Convention</option>
+            <option>Idea Viability Conference</option>
+            <option>Project Partner Finalization</option>
+            <option>Project Planning</option>
+            
+          </select>
+
+
+
+  
 
 
 
     </form>
 
+      <section class="saved-events">
+    <h2>Saved Events</h2>
+    <p>These are stored in this browser only.</p>
+    <div class="table-wrap">
+      <table>
+        <caption>Saved events</caption>
+        <thead>
+          <tr>
+            <th scope="col">Your Name</th>
+            <th scope="col">Events</th>
+
+          </tr>
+        </thead>
+        <tbody id="events-body"></tbody>
+      </table>
+    </div>
+  
+  </section>
 
 
 
